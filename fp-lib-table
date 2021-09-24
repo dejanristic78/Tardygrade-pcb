@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name 111footprints)(type KiCad)(uri /home/dejan/Dropbox/KiCad/Tardygrade/Tardygrade)(options "")(descr ""))
+  (lib (name Tardygrade)(type KiCad)(uri C:/Users/dejan/Dropbox/KiCad/Tardygrade/Tardygrade.pretty)(options "")(descr ""))
+  (lib (name 222footprints)(type KiCad)(uri ${KIPRJMOD}/222footprints.pretty)(options "")(descr ""))
+)

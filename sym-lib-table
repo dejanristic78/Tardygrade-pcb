@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 111symbols)(type Legacy)(uri ${KIPRJMOD}/111symbols.lib)(options "")(descr ""))
+  (lib (name Tardygrade-rescue)(type Legacy)(uri ${KIPRJMOD}/Tardygrade-rescue.lib)(options "")(descr ""))
+)
