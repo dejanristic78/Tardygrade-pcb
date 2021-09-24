@@ -1,1 +1,1 @@
-# Tardygrade-pcb
+# For fabrication, use 1.6 mm pcb thickness.
