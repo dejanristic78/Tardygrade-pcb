@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "Tardygrade pcb v0.31"
+Date "2021-10-11"
 Rev ""
 Comp ""
 Comment1 ""
@@ -166,19 +166,19 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet
 $EndComp
 Text GLabel 9750 3250 0    50   Output ~ 0
 HallLeft
-Text GLabel 5500 3200 0    50   Input ~ 0
+Text GLabel 5500 3300 0    50   Input ~ 0
 HallRear
 Text GLabel 9700 1500 0    50   Output ~ 0
 HallRear
-Text GLabel 6500 5300 2    50   Input ~ 0
+Text GLabel 5500 4900 0    50   Input ~ 0
 HallFront
-Text GLabel 6500 3500 2    50   Input ~ 0
+Text GLabel 5500 3200 0    50   Input ~ 0
 HallFront
 Text GLabel 7800 3250 0    50   Output ~ 0
 HallFront
-Text GLabel 6500 5400 2    50   Input ~ 0
+Text GLabel 5500 5100 0    50   Input ~ 0
 HallRight
-Text GLabel 6500 3600 2    50   Input ~ 0
+Text GLabel 5500 3400 0    50   Input ~ 0
 HallRight
 Text GLabel 7850 1550 0    50   Output ~ 0
 HallRight
@@ -332,7 +332,7 @@ Text GLabel 5500 5300 0    50   UnSpc ~ 0
 3V3_Source
 Text GLabel 4850 1350 0    50   Output ~ 0
 LidarFront
-Text GLabel 5500 3300 0    50   Input ~ 0
+Text GLabel 6500 3600 2    50   Input ~ 0
 LidarFront
 $Comp
 L power:GND #PWR0101
@@ -347,8 +347,6 @@ F 3 "" H 8750 4500 50  0001 C CNN
 $EndComp
 Text GLabel 1750 1500 0    50   Input ~ 0
 PWR_EN
-Text GLabel 8900 5000 0    50   Input ~ 0
-PWR_EN
 $Comp
 L power:GND #PWR0105
 U 1 1 60FBA36A
@@ -360,11 +358,11 @@ F 3 "" H 9900 5400 50  0001 C CNN
 	1    9900 5400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5500 5000 0    50   Input ~ 0
+Text GLabel 6500 5400 2    50   Input ~ 0
 LidarFront
-Text GLabel 6500 4900 2    50   Output ~ 0
+Text GLabel 6500 5100 2    50   Output ~ 0
 ServoRear
-Text GLabel 5500 4900 0    50   Input ~ 0
+Text GLabel 5500 5000 0    50   Input ~ 0
 HallRear
 $Comp
 L Connector_Generic:Conn_01x03 J4
@@ -379,9 +377,9 @@ F 3 "https://www.pololu.com/product/4050" H 5050 1850 50  0001 C CNN
 $EndComp
 Text GLabel 4850 1950 0    50   Output ~ 0
 LidarRear
-Text GLabel 5500 5100 0    50   Input ~ 0
+Text GLabel 6500 5300 2    50   Input ~ 0
 LidarRear
-Text GLabel 5500 3400 0    50   Input ~ 0
+Text GLabel 6500 3500 2    50   Input ~ 0
 LidarRear
 Text GLabel 6500 3300 2    50   Output ~ 0
 ServoRear
@@ -400,8 +398,6 @@ F 3 "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0006646660/DIOD
 $EndComp
 Text GLabel 1850 1800 0    50   UnSpc ~ 0
 3V3_Source
-Text GLabel 3250 1800 0    50   UnSpc ~ 0
-VBAT_Source
 Text GLabel 8750 4900 0    50   UnSpc ~ 0
 VBAT_Drain
 Text GLabel 3650 1800 2    50   UnSpc ~ 0
@@ -605,8 +601,6 @@ Text GLabel 3650 3700 2    50   UnSpc ~ 0
 RX
 Text GLabel 6500 4800 2    50   Input ~ 0
 Reset
-Text GLabel 2050 1200 1    50   UnSpc ~ 0
-VBAT_Source
 Text GLabel 3650 3400 2    50   UnSpc ~ 0
 EN
 Text GLabel 3650 3600 2    50   UnSpc ~ 0
@@ -635,9 +629,9 @@ F 3 "" H 3350 4000 50  0001 C CNN
 	1    3350 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 5000 2    50   UnSpc ~ 0
+Text GLabel 6500 4900 2    50   UnSpc ~ 0
 MOSI
-Text GLabel 6500 5100 2    50   UnSpc ~ 0
+Text GLabel 6500 5000 2    50   UnSpc ~ 0
 SCK
 Text GLabel 6500 5200 2    50   UnSpc ~ 0
 GPIO36
@@ -703,4 +697,9 @@ Wire Wire Line
 Wire Wire Line
 	6550 1800 6550 1900
 Connection ~ 6100 1800
+NoConn ~ 8900 5000
+Text GLabel 3250 1800 0    50   UnSpc ~ 0
+VBAT_Source
+Text GLabel 2050 1200 1    50   UnSpc ~ 0
+3V3_Source
 $EndSCHEMATC
