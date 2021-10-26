@@ -533,8 +533,6 @@ Text GLabel 3650 3700 2    50   UnSpc ~ 0
 RX
 Text GLabel 6500 4800 2    50   Input ~ 0
 Reset
-Text GLabel 3650 3400 2    50   UnSpc ~ 0
-EN
 Text GLabel 3650 3600 2    50   UnSpc ~ 0
 Reset
 Text GLabel 6500 4900 2    50   UnSpc ~ 0
@@ -605,11 +603,8 @@ Wire Wire Line
 Wire Wire Line
 	6550 1800 6550 1900
 Connection ~ 6100 1800
-NoConn ~ 3150 4000
-NoConn ~ 3350 4000
-NoConn ~ 3050 4000
 Text GLabel 9450 5050 0    50   Input ~ 0
-BOOST_EN
+3V3_Rail
 $Comp
 L Connector:Conn_01x03_Male J5
 U 1 1 617752AF
@@ -635,10 +630,10 @@ $EndComp
 Wire Wire Line
 	9300 4550 9300 4650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 617929C8
 P 8050 4650
-F 0 "#PWR?" H 8050 4400 50  0001 C CNN
+F 0 "#PWR0115" H 8050 4400 50  0001 C CNN
 F 1 "GND" H 8055 4477 50  0000 C CNN
 F 2 "" H 8050 4650 50  0001 C CNN
 F 3 "" H 8050 4650 50  0001 C CNN
@@ -651,7 +646,7 @@ U 1 1 61793596
 P 8050 4800
 F 0 "R1" H 8120 4846 50  0000 L CNN
 F 1 "10k" H 8120 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7980 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7980 4800 50  0001 C CNN
 F 3 "~" H 8050 4800 50  0001 C CNN
 	1    8050 4800
 	1    0    0    -1  

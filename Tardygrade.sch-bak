@@ -185,7 +185,7 @@ HallRight
 Text GLabel 6100 1200 0    50   UnSpc ~ 0
 5V_Rail
 Text GLabel 5500 3500 0    50   Output ~ 0
-PWR_EN
+BOOST_EN
 Text GLabel 5500 4700 0    50   Output ~ 0
 ServoFront
 Text GLabel 5500 2900 0    50   Output ~ 0
@@ -204,9 +204,9 @@ F 3 "" H 5500 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 5500 5600 0    50   UnSpc ~ 0
-VBAT_Rail
+VBAT
 Text GLabel 5500 3800 0    50   UnSpc ~ 0
-VBAT_Rail
+VBAT
 $Comp
 L power:GND #PWR0109
 U 1 1 60C8027A
@@ -266,66 +266,64 @@ $EndComp
 $Comp
 L 111symbols:MCP1642B U1
 U 1 1 60A7C698
-P 9300 5050
-F 0 "U1" H 9325 5581 50  0000 C CNN
-F 1 "MCP1642B" H 9325 5490 50  0000 C CNN
-F 2 "222footprints:MSOP-8_Handsolder" H 9350 4500 50  0001 C CNN
-F 3 "https://www.mouser.se/datasheet/2/268/20005253A-596569.pdf" H 9000 5400 50  0001 C CNN
-	1    9300 5050
+P 9850 5100
+F 0 "U1" H 9875 5631 50  0000 C CNN
+F 1 "MCP1642B" H 9875 5540 50  0000 C CNN
+F 2 "222footprints:MSOP-8_Handsolder" H 9900 4550 50  0001 C CNN
+F 3 "https://www.mouser.se/datasheet/2/268/20005253A-596569.pdf" H 9550 5450 50  0001 C CNN
+	1    9850 5100
 	1    0    0    -1  
 $EndComp
-Connection ~ 8900 4900
-Connection ~ 9350 5400
+Connection ~ 9450 4950
+Connection ~ 9900 5450
 Wire Wire Line
-	9350 5400 9900 5400
+	9900 5450 10450 5450
 Wire Wire Line
-	9200 5400 9350 5400
-NoConn ~ 9750 5200
+	9750 5450 9900 5450
+NoConn ~ 10300 5250
 Wire Wire Line
-	8750 4900 8900 4900
-Text GLabel 9900 4900 2    50   UnSpc ~ 0
+	9300 4950 9450 4950
+Text GLabel 10450 4950 2    50   UnSpc ~ 0
 5V_Rail
 Wire Wire Line
-	9900 4900 9750 4900
+	10450 4950 10300 4950
 Wire Wire Line
-	9900 5200 9900 5400
+	10450 5250 10450 5450
 Wire Wire Line
-	8750 4500 8750 4600
+	9450 4750 9450 4950
 Wire Wire Line
-	8900 4700 8900 4900
-Wire Wire Line
-	9300 4700 9200 4700
+	9850 4750 9750 4750
 $Comp
 L Device:C C1
 U 1 1 60A3ACB9
-P 8750 4750
-F 0 "C1" H 8865 4796 50  0000 L CNN
-F 1 "10μF" H 8865 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8788 4600 50  0001 C CNN
-F 3 "~" H 8750 4750 50  0001 C CNN
-	1    8750 4750
+P 9300 4800
+F 0 "C1" H 9415 4846 50  0000 L CNN
+F 1 "10μF" H 9415 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9338 4650 50  0001 C CNN
+F 3 "~" H 9300 4800 50  0001 C CNN
+	1    9300 4800
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 60A3A32D
-P 9900 5050
-F 0 "C2" H 10015 5096 50  0000 L CNN
-F 1 "10μF" H 10015 5005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9938 4900 50  0001 C CNN
-F 3 "~" H 9900 5050 50  0001 C CNN
-	1    9900 5050
+P 10450 5100
+F 0 "C2" H 10565 5146 50  0000 L CNN
+F 1 "10μF" H 10565 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10488 4950 50  0001 C CNN
+F 3 "~" H 10450 5100 50  0001 C CNN
+	1    10450 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L1
 U 1 1 60A37229
-P 9050 4700
-F 0 "L1" V 8869 4700 50  0000 C CNN
-F 1 "L" V 8960 4700 50  0000 C CNN
-F 2 "222footprints:710-744052005" H 9050 4700 50  0001 C CNN
-F 3 "https://www.mouser.se/datasheet/2/445/744052005-1721003.pdf" H 9050 4700 50  0001 C CNN
-	1    9050 4700
+P 9600 4750
+F 0 "L1" V 9419 4750 50  0000 C CNN
+F 1 "L" V 9510 4750 50  0000 C CNN
+F 2 "222footprints:710-744052005" H 9600 4750 50  0001 C CNN
+F 3 "https://www.mouser.se/datasheet/2/445/744052005-1721003.pdf" H 9600 4750 50  0001 C CNN
+	1    9600 4750
 	0    1    1    0   
 $EndComp
 Text GLabel 5500 5300 0    50   UnSpc ~ 0
@@ -335,25 +333,14 @@ LidarFront
 Text GLabel 6500 3600 2    50   Input ~ 0
 LidarFront
 $Comp
-L power:GND #PWR0101
-U 1 1 60A8BE04
-P 8750 4500
-F 0 "#PWR0101" H 8750 4250 50  0001 C CNN
-F 1 "GND" H 8755 4327 50  0000 C CNN
-F 2 "" H 8750 4500 50  0001 C CNN
-F 3 "" H 8750 4500 50  0001 C CNN
-	1    8750 4500
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 60FBA36A
-P 9900 5400
-F 0 "#PWR0105" H 9900 5150 50  0001 C CNN
-F 1 "GND" V 9905 5272 50  0000 R CNN
-F 2 "" H 9900 5400 50  0001 C CNN
-F 3 "" H 9900 5400 50  0001 C CNN
-	1    9900 5400
+P 10450 5450
+F 0 "#PWR0105" H 10450 5200 50  0001 C CNN
+F 1 "GND" V 10455 5322 50  0000 R CNN
+F 2 "" H 10450 5450 50  0001 C CNN
+F 3 "" H 10450 5450 50  0001 C CNN
+	1    10450 5450
 	0    -1   -1   0   
 $EndComp
 Text GLabel 6500 5400 2    50   Input ~ 0
@@ -382,8 +369,8 @@ LidarRear
 Text GLabel 6500 3300 2    50   Output ~ 0
 ServoRear
 Text GLabel 5500 5200 0    50   Output ~ 0
-PWR_EN
-Text GLabel 8750 4900 0    50   UnSpc ~ 0
+BOOST_EN
+Text GLabel 8200 4950 2    50   UnSpc ~ 0
 VBAT_Rail
 Text GLabel 8700 1550 2    50   UnSpc ~ 0
 3V3_Rail
@@ -465,7 +452,7 @@ F 3 "" H 10150 3750 50  0001 C CNN
 	1    10150 3750
 	1    0    0    -1  
 $EndComp
-Connection ~ 9900 5400
+Connection ~ 10450 5450
 $Comp
 L 111symbols:XpansionHeader X1
 U 1 1 613EE259
@@ -530,7 +517,7 @@ Text GLabel 5500 2800 0    50   UnSpc ~ 0
 SCL
 Text GLabel 5500 3000 0    50   UnSpc ~ 0
 GPIO32
-Text GLabel 5500 3700 0    50   UnSpc ~ 0
+Text GLabel 5500 3700 0    50   Input ~ 0
 EN
 Text GLabel 3650 3000 2    50   UnSpc ~ 0
 SDA
@@ -546,8 +533,6 @@ Text GLabel 3650 3700 2    50   UnSpc ~ 0
 RX
 Text GLabel 6500 4800 2    50   Input ~ 0
 Reset
-Text GLabel 3650 3400 2    50   UnSpc ~ 0
-EN
 Text GLabel 3650 3600 2    50   UnSpc ~ 0
 Reset
 Text GLabel 6500 4900 2    50   UnSpc ~ 0
@@ -618,20 +603,63 @@ Wire Wire Line
 Wire Wire Line
 	6550 1800 6550 1900
 Connection ~ 6100 1800
-NoConn ~ 3150 4000
-NoConn ~ 3350 4000
-NoConn ~ 3050 4000
-Text GLabel 8900 5000 0    50   UnSpc ~ 0
+Text GLabel 9450 5050 0    50   Input ~ 0
 3V3_Rail
 $Comp
-L Switch:SW_DPDT_x2 SW?
-U 1 1 6179F76B
-P 3000 4750
-F 0 "SW?" H 3000 5035 50  0000 C CNN
-F 1 "SW_DPDT_x2" H 3000 4944 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" H 3000 4750 50  0001 C CNN
-F 3 "~" H 3000 4750 50  0001 C CNN
-	1    3000 4750
+L Connector:Conn_01x03_Male J5
+U 1 1 617752AF
+P 7500 4950
+F 0 "J5" H 7608 5231 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 7608 5140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7500 4950 50  0001 C CNN
+F 3 "~" H 7500 4950 50  0001 C CNN
+	1    7500 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60A8BE04
+P 9300 4550
+F 0 "#PWR0101" H 9300 4300 50  0001 C CNN
+F 1 "GND" H 9305 4377 50  0000 C CNN
+F 2 "" H 9300 4550 50  0001 C CNN
+F 3 "" H 9300 4550 50  0001 C CNN
+	1    9300 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9300 4550 9300 4650
+$Comp
+L power:GND #PWR0115
+U 1 1 617929C8
+P 8050 4650
+F 0 "#PWR0115" H 8050 4400 50  0001 C CNN
+F 1 "GND" H 8055 4477 50  0000 C CNN
+F 2 "" H 8050 4650 50  0001 C CNN
+F 3 "" H 8050 4650 50  0001 C CNN
+	1    8050 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61793596
+P 8050 4800
+F 0 "R1" H 8120 4846 50  0000 L CNN
+F 1 "10k" H 8120 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7980 4800 50  0001 C CNN
+F 3 "~" H 8050 4800 50  0001 C CNN
+	1    8050 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 4850 2    50   UnSpc ~ 0
+VBAT
+Wire Wire Line
+	8200 4950 8050 4950
+Wire Wire Line
+	7700 4950 8050 4950
+Connection ~ 8050 4950
+Text GLabel 7700 5050 2    50   Output ~ 0
+EN
+Text GLabel 9300 4950 0    50   UnSpc ~ 0
+VBAT_Rail
 $EndSCHEMATC
