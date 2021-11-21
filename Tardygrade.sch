@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Tardygrade pcb v0.4"
-Date "2021-10-11"
+Title "Tardygrade pcb v0.41"
+Date "2021-11-21"
 Rev ""
 Comp ""
 Comment1 ""
@@ -178,14 +178,12 @@ Text GLabel 7800 3250 0    50   Output ~ 0
 HallFront
 Text GLabel 5500 5100 0    50   Input ~ 0
 HallRight
-Text GLabel 5500 3400 0    50   Input ~ 0
+Text GLabel 5500 3000 0    50   Input ~ 0
 HallRight
 Text GLabel 7850 1550 0    50   Output ~ 0
 HallRight
 Text GLabel 6100 1200 0    50   UnSpc ~ 0
 5V_Rail
-Text GLabel 5500 3500 0    50   Output ~ 0
-BOOST_EN
 Text GLabel 5500 4700 0    50   Output ~ 0
 ServoFront
 Text GLabel 5500 2900 0    50   Output ~ 0
@@ -368,8 +366,6 @@ Text GLabel 6500 3500 2    50   Input ~ 0
 LidarRear
 Text GLabel 6500 3300 2    50   Output ~ 0
 ServoRear
-Text GLabel 5500 5200 0    50   Output ~ 0
-BOOST_EN
 Text GLabel 8200 4950 2    50   UnSpc ~ 0
 VBAT_Rail
 Text GLabel 8700 1550 2    50   UnSpc ~ 0
@@ -513,16 +509,12 @@ Text GLabel 5500 2700 0    50   UnSpc ~ 0
 SDA
 Text GLabel 5500 2800 0    50   UnSpc ~ 0
 SCL
-Text GLabel 5500 3000 0    50   UnSpc ~ 0
-GPIO32
 Text GLabel 5500 3700 0    50   Input ~ 0
 EN
 Text GLabel 3650 3000 2    50   UnSpc ~ 0
 SDA
 Text GLabel 3650 3100 2    50   UnSpc ~ 0
 SCL
-Text GLabel 3650 3200 2    50   UnSpc ~ 0
-GPIO32
 Text GLabel 2750 3700 0    50   UnSpc ~ 0
 GPIO21
 Text GLabel 3650 3300 2    50   UnSpc ~ 0
@@ -662,4 +654,8 @@ Text GLabel 9300 4950 0    50   UnSpc ~ 0
 VBAT_Rail
 Text GLabel 2750 3600 0    50   UnSpc ~ 0
 MISO
+NoConn ~ 5500 3500
+NoConn ~ 5500 5200
+NoConn ~ 3650 3200
+NoConn ~ 5500 3400
 $EndSCHEMATC
